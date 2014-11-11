@@ -1,0 +1,4 @@
+LIBRARY network_Win
+
+EXPORTS
+	net_Win_basic

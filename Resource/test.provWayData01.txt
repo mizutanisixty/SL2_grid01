@@ -1,0 +1,11 @@
+header,data,way
+dummyt,a,b
+tsunami_hazard_map,image,getMap+[table?test.provKnowledge01.dll*getTsunamiData]>imgProc
+imgProc,image,[image?test.procImg01.dll*procMap]
+getTsunamiData,table,[table?test.provKnowledge01.dll*getTsunamiData]
+getMap,image,[image?test.procImg01.dll*getMap]
+setCharSize,string,[string?test.contCUI.dll*setCharSize]
+echo,string,[string?test.contCUI.dll*echo]
+dummy2,x,y
+getImgByPath,image,[image?test.procImg01.dll*getImgByPath]
+e_gibp,image,echo>getImgByPath

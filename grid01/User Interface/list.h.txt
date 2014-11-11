@@ -1,0 +1,106 @@
+//とりあえずここに回避
+
+//コンストラクタ内で
+//list.p = this;
+//を行う
+
+/*struct LIST{
+		dynamic<long> tag;
+		dynamic<string*> data;
+		dynamic<bool> isThisAvaible;
+		CUI* p;
+		LIST(){};
+		~LIST(){
+			long tmp = tag.getSize();
+			tmp = data.getSize();
+			for(long i=0;i<tmp;i++)
+				delete data[i];
+		};
+		//isAvailable
+		int pos(long num){
+			long tmp = tag.getSize();
+			for(long i=0;i<tmp;i++)
+			//	cout<<*tag.c(i)<<endl;
+				if((tag[i]) == num && isThisAvaible[i])
+					return i;
+			return -1;
+		};
+		bool a(long num){
+			return pos(num) != -1;
+		};
+		string& call(long num){
+			long tmp = pos(num);
+			if(tmp != -1)
+				return *data[tmp];
+	
+			tmp = tag.getSize();
+			//存在しなかったら作る
+			for(long i=0;i<tmp;i++)
+				if(!isThisAvaible[i]){
+					tag[i] = num;
+					isThisAvaible[i] = true;
+#ifdef __debug__
+			std::cout << "\n\t\t > (+) added an item to cui buffer\n";
+#endif
+					//return data[data.getSize()-1];	//謎なので一応コメントアウト
+					return *data[i];
+				}
+			//tag.add(1);
+			//tag.c(1) = new string;
+			//add_one_and_new(tag, string, tmp);
+				tag.add(1);
+			//tmp = tag.getSize()-1;
+			tag[tmp] = num;
+			//cout << *tag.c(tmp) << endl;
+			isThisAvaible.add(1);
+			isThisAvaible[tmp] = true;
+#ifdef __debug__
+			std::cout << "\n\t\t > (+) added an item to a map [" << num << "]\n";
+#endif
+			data.add(1);
+			return *data[tmp];
+		};
+
+	} list;
+	*/
+
+//添え字のオーバーロードで呼び出し
+	//
+	//
+	//面倒なのでコメントアウト
+	//
+	//
+	//
+	/*
+	T& operator[](string str){
+		return call(str);
+	};
+	T& operator[](char* str){
+		string _str(str);
+		return call(_str);
+	};
+	int operator()(string str){
+		return del(str);
+	};
+	int operator()(char* str){
+		string _str(str);
+		return del(str);
+	};
+	int del(string str){
+		long i = pos(str);
+		if(i==-1)
+			return 0;
+		isThisAvaible[i] = false;
+#ifdef __debug__
+		cout << "\n\t\t > (-) deleted an item from a map [" << str << "]\n";
+#endif
+		return 1;
+	};*/
+	//**************
+	//ここまで修正中
+	//**************
+
+	/*
+	//マニピュレータからリストにアクセスするため
+	dynamic<string>* p_callList();
+	*/

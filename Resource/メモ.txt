@@ -1,0 +1,11 @@
+08/09	ここまでに80%完成させないと後々厳しい(らしい)
+08/29	発表リハーサル (一人20分)
+08/30	大会議室で発表会
+01月	論文作成
+
+横浜市オープンデータ
+http://data.yokohamaopendata.jp/group/somu_kikikanri
+	>>津波避難施設XML
+	http://www.city.yokohama.lg.jp/somu/org/kikikanri/data/tunami.xml
+
+XML読み込み関数を探してくる or 作る

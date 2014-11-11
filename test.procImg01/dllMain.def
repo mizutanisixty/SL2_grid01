@@ -1,0 +1,6 @@
+LIBRARY
+EXPORTS
+	getMap
+	procMap
+	getImgByPath
+
